@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Teste com minhas imagens</h1>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/peq.png" type="image/png"><!-- se a tela tiver menos de 750px que é o tamanho da imagem anterior a imagem do site vira a imagem pequena de 300px -->
+        <source media="(max-width: 1050px)" srcset="imagens/med.png" type="image/png"> <!-- se a tela tiver menos de 1050px a imagem do site vira a media de 700px -->
+        <img src="imagens/gran.png"><!-- imagem carregada por padrao ela tem 1000px -->
+    </picture>
+    
+</body>
+</html>

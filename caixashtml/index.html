@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        p {
+          
+            /*Como o p é boxlevel 
+            a caixa dele ocupa a largura total da tela, a cada caixa box level pula a linha, caixa inline level nao          
+            */
+            margin-top: 10px;
+        }
+
+        h1 {
+            
+            height: 300px;
+            width: 300px;
+            background-color: chartreuse;
+           
+            border-width: 10px;
+            border-style: solid;
+            border-color: aqua; /*Shorthand - border: 10px, solid, aqua;*/
+            /* tipos de padding */
+            padding-top: 10px;
+            /* a esquerda */
+            padding-right: 10px;
+            /* direita */
+            padding-bottom: 10px;
+            /* topo */
+            padding-left: 10px;  /*Shorthand - padding: 10px, 10px, 10px, 10px;*/
+            /* embaixo */        /*O shorthand tem que ser na ordem de cima top-right-bottom-left*/
+                                 /*Se as 4 unidades forem no mesmo tamanho basta padding: 10px;*/
+
+            /* Margens */
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+
+            /*Outline fica entre a margem e a borda*/
+            outline-width: 5px;
+            outline-style: dashed; /*outline tracejado*/
+            outline-color: blueviolet;
+
+            
+
+
+        }
+
+        a {
+         
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(255, 0, 0);
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+           
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>O nosso html é apresentado no navegador em forma de caixa</h1>
+
+    <p>Por exemplo esse h1 é uma caixa box-level ela ocupa a largura total da tela</p>
+    <p>Podemos ver isso adicioando um background color, o paragrafo tambem é box level</p>
+    <p>Elementos box level pulam a linha, inline nao <a href="#">Links sao inline-level</a></p>
+
+
+</body>
+
+</html>

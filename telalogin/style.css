@@ -1,0 +1,56 @@
+body{
+    background-image: url("degrade.jpg");
+    background-size: cover;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: grey;
+    text-shadow: 2px 2px rgba(245, 245, 245, 0.374);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+}
+.bloco{
+    background-image: linear-gradient(to bottom, rgb(224, 228, 230), rgb(43, 217, 226), aqua);
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.236);
+
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+    font-style: oblique;
+    text-shadow: 2px 2px rgba(245, 245, 245, 0.555);
+    
+
+}
+.login{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 0;
+    height: 30px;
+    width: 70px;
+    color: grey;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(128, 128, 128, 0.307);
+    cursor: pointer;
+    border: 0;
+
+
+}

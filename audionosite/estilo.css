@@ -1,0 +1,32 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px purple; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+} 
+.fundo{
+    background-image: url(fundo/degrade.jpg);
+    background-size: cover;
+    
+}
+.bloco{
+    margin: auto;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise); /* efeito de degrade na div */
+    color: rgb(238, 238, 238);
+    border-radius: 15px;
+    text-shadow: 3px 3px purple; /* somvbra no texyo */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.botao{
+    border-radius: 5px;
+    box-shadow: 2px 2px aqua; /* sombra no botao */
+    border-color: aquamarine;
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 70px;
+    height: 40px;
+}

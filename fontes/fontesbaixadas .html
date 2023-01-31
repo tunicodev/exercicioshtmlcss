@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes baixadas</title>
+    <style>
+        /* Adicionando fonte baixada e descompactada (ela vem em arquivo zip) */
+       @font-face {
+        font-family: text;
+        src: url('Fastup-Regular.ttf') format('truetype');
+        font-size: normal;
+        font-weight: normal;/* Esses atribustos indicam para o navegador que a fonte fica melhor com eles
+        mas as vezes temos que mudar manualmente na classe
+        */
+       }
+        
+       @font-face {
+            font-family: 'paladins';
+            /* Nome do font-family*/
+            src: url('paladins3d.ttf') format('truetype');
+            font-size: normal;
+            font-weight: normal;
+    
+            /*Tipos de format dependendo do tipo do arquivo
+            - opentype (.otf)
+            - truetype(.ttf) - esse é o tipo de arquivo que estamos usando
+            - embedded-opentype
+            - truetype-att (Apple Advanced Typography)
+
+            CADA NAVEGADOR É COMPATIVEL COM UM TIPO DESSES
+            
+            
+         
+            */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+        }
+
+        h1 {
+            font-family: 'paladins', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        p{
+            font-family: 'text', sans-serif;
+            font-weight: normal;
+            /*Nesta fonte o weight minimo que podemos colocar é 300
+            o maximo 700
+            */
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fontes baixadas do site dafont.com</h1>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe mollitia, obcaecati dicta accusamus nam ab
+        repellat harum recusandae cumque tempora laudantium eum. Asperiores perspiciatis aperiam molestias accusantium
+        dolores ducimus officiis?</P>
+
+</body>
+
+</html>

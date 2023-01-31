@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatos</title>
+</head>
+<body>
+    <h1>Alguns navegadores nao suportam alguns formatos de audio</h1>
+    
+    <audio controls autoplay>
+        <!-- se o formato abaixo nao for compativel o navegador tenta rodar os outros (em ordem) -->
+        <source src="chuva.mp3" type="audio/mpeg">
+        <source src="chuva.wav" type="audio/wav"> <!-- Arquivos wave sao muito pesados, NAO USAR! -->
+        <source src="chuva.ogg" type="audio/ogg">
+        <h2>Se seu navegador nao rodar o audio você pode tentar baixar</h2>
+        <a href="chuva.mp3"><p>Download</p></a>
+    </audio>
+</body>
+</html>

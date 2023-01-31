@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        h1{
+            font-family: 'Great Vibes', Helvetica, sans-serif;
+            font-weight: 400;
+        }
+        a{
+            color: red; /*cor padrao definida por links*/
+            text-decoration: none; /*tirou o sublinhado dos links*/
+        }
+        a:visited{
+            color: chartreuse; /*se o link ja foi visitado a cor fica verde*/
+        }
+        a:hover{
+            text-decoration: underline; /* ao passar o cursor no link ele fica sublinhado */
+            color: black;
+
+        }
+        a:active{ 
+            color: pink; /*ao ser clicado (ativo) o link fica da cor rosa*/
+        }
+        a::after{ /* pseudo elemento indicado por : after = depois*/
+            content: ' link'; /* isso sera apresentado depois da tag a do html*/
+            text-decoration: none;
+            font-weight: normal;
+            color: rgba(255, 192, 203, 0.434);
+        }
+        a::before{ /*elemento adicionado antes da tag a*/
+            content: ' Aqui do lado tem um link '; /*conteudo*/
+            color: rgb(255, 192, 203);
+            text-decoration: none;
+        }
+        .imp::before{ /*este before sobrepoes os anteriores somente para classe imp*/
+            content: ' importante ';
+            color: rgba(255, 4, 4, 0.558);
+        }
+        .imp::after{
+            content: clique;
+            color: rgba(255, 4, 4, 0.558);
+            
+
+        }
+        .imp:hover{background-color: cadetblue;}
+        /*
+        
+        pseudo-class = :
+        pseudo-element = ::
+        
+        
+        */
+       
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+    <li><a href="https://www.beecrowd.com.br/judge/pt/disciplines" target="_blank" rel="external">beecrowd</a></li>
+    <li><a href="https://ead.upf.br/login/index.php" target="_blank" rel="external">moodle</a></li>
+    <li><a href="https://www.netflix.com/browse" class="imp">netflix</a></li>
+    <li><a href="https://twitter.com/rerypensamentos">clicando aqui!</a></p></li>
+    
+
+    </ul>
+</body>
+</html>

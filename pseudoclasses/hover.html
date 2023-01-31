@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        h1:hover {
+            color: rebeccapurple;
+            /*Muda a cor no passar do mouse*/
+        }
+
+        div>p {
+            /* Indica o paragrafo que esta dentro da div (filho da div)*/
+            display: none;
+            /* deixando o texto oculto*/
+        }
+
+        div:hover>p {
+            /* Quando o mouse passa encima da div o texto oculto aparece*/
+            /* indica o paragrafo que esta dentro da div */
+            display: block;
+            background-color: black;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Muda de cor</h1>
+    <div>
+        Passe o mouse texto escondido!
+        <p>Oculto</p>
+    </div>
+
+</body>
+
+</html>
