@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background size</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        background-color: black;
+        background-image: url('pacotedeimagens/wallpaper002.jpg');
+        background-position: top center; /* topo centralizado onde a imagem trava mesmo que diminua a tela o top center nao corta*/
+        background-repeat: no-repeat; /* se o conteudo do site for muito extenso para baixo a imagem termina, se o repate for norepeat a imagem replica */
+        background-size: cover; /* imagem ocupa toda a tela*/
+        background-attachment: fixed; /* para a imagem nao replicar nem acabar usamos attachment fixed assim o conteudo rola para baixo mas a imagem fica fixa */
+
+           /* Shorthand background
+        color > image > position > repeat > size > attachment
+        
+        */
+        background: black url('pacotedeimagens/wallpaper002.jpg') top center no-repeat cover fixed;
+    }
+    main{
+        background-color: white;
+        width: 400px;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid blue;
+        border-radius: 15px; /* com essas configuraçoes a imagem tem uma quebra no final */
+        max-width: 900px; /* conteudo nao estica mais que isso */
+     
+    }
+</style>
+<body>
+    <main>
+        <h1>Teste de fundo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro impedit eum odit iure illum nulla voluptas, culpa rem dolor voluptatibus nemo deserunt quisquam. Quam beatae, maxime cumque ipsam adipisci laudantium?
+
+
+        </p>
+    </main>
+</body>
+</html>
