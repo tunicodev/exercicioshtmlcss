@@ -13,7 +13,7 @@
 
 html, body{
     min-height: 100vh; /* altura minima 100% da view porta toda a altura da tela */
-    background-color: darkgrey;
+    background-color: white;
 }
 header{
     background-color: black;
