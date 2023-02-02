@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+</head>
+<style>
+    #container{
+        position: relative; /* por padrao elementos box tem o position relative */
+        height: 96vh;
+        padding: 10px;
+        background-color: purple;
+        background-image: url('target001.png');
+        background-size: 100% 100%; /* tambem podemos usar porcentagens no backgroundsize */
+    }
+    #conteudo{
+        position: absolute;
+        height: 200px;
+        background-color: yellow;
+        width: 400px;
+        /* quando colocamos position absolute nos filhos podemos usar essas duas propriedades abaixo */
+        left: 50%; /* deslocamento do conteudo para borda esquerda do container */
+        top: 50%; /* deslocamento do conteudo para a borda do topo  */
+        background-image: url('target001.png');
+        background-size: 100% 100%;
+        /*transform: translate(-400px, -300px);valor positivo descloca para direita 
+                                               valor negativo descola para esquerda 
+        */
+        transform: translate(-50%, -50%); /* centralizando o alvo  */
+        
+    }
+    #conteudo:hover{
+        background-color: aliceblue;
+        transition-duration: 1s;
+    }
+</style>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
