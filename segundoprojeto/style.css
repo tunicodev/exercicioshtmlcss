@@ -28,6 +28,7 @@ header h1{
 }
 header p{
     padding-bottom: 50px; /* padding simetrico no h1 e no p */
+ 
 }
 a{
     text-decoration: none;
