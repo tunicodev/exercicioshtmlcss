@@ -5,8 +5,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela 03</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /* obrigatorio para deixar o cabeçalho fixo */
+        }
+        thead > tr > th{ /* dentro do thead a linha dentro da linha o th */
+            position: sticky; /* GRUDADO */
+            top: -1px;  /* grudado no topo */
+            background-color: rgb(12, 255, 12); /* sem o background color nao funciona direito */
+            
+        }      
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        
+        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: lightgray;
+     
+            
+        }
+        /* efeito zebrado na tabela */                   
+        tbody tr:nth-child(2n){ /* de duas em duas linhas uma vai ter essa cor de background */
+            background-color: lightgrey;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1></h1>
+    <!-- Anatomia para tabelas grandes 
+            TABLE
+                CAPTION - LEGENDA DA TABELA NAO PODE POR NEM TR NEM TD
+                THEAD    
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT 
+                    TR, TD, TH
+
+                    SEMANTICO
+                    TH = TITULO
+                    TD = ITEM
+                    TR = LINHA
+    -->
+    <table>
+        <caption>População das unidades federativas</caption> <!-- legenda da tabela -->
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!-- scope col indica que é o titulo de uma coluna -->
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+               <td>São Paulo</td>
+               <td>45 919 049</td> 
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>10 444 526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11 088 065</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>8 796 448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8 936 431</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8 442 962</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7 762 154</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>6 950 976</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>6 800 605</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>4 108 508</td>
+            </tr>
+            <tr>
+                <td>Pariba</td>
+                <td>4 030 961</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>3 952 262</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3 784 239</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3 303 953</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3 270 174</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3 125 254</td>
+            </tr>
+            <tr>
+                <td>Distrito Frderal</td>
+                <td>2 923 369</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2 833 742</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2 211 868</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1 616 379</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>1 584 306</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>829 780</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>774 268</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>634 805</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!-- scope row indica o tirulo de uma linha -->
+                <td>###</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
